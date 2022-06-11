@@ -22,31 +22,126 @@
             height: 100%;
         }
 
-        .container {
+
+        .discount-container {
+            /* round corners and transparent dark background */
+            border-radius: 35px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px;
+            /* center the container */
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 100%;
+            width: 50%;
             text-align: center;
             z-index: 999;
+            /* padding on bottom and top */
+            padding-top: 20px;
+            padding-bottom: 20px;
+
         }
+
+        .discount-container-bigger {
+            /* round corners and transparent dark background */
+            border-radius: 35px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px;
+            /* center the container */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            text-align: center;
+            z-index: 999;
+            /* padding on bottom and top */
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+
+        img {
+            /* rounded corners and transparent dark background */
+            border-radius: 35px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* kewl buttons */
+        .discount-button {
+            border-radius: 35px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 20px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .discount-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #cfc693;
+        }
+
+        .discount-button:active {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* blue play button */
+        .discount-button-blue {
+            border-radius: 35px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 20px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .discount-button-blue:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #cfc693;
+        }
+
+        .discount-button-blue:active {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        
     </style>
 
 </head>
 
 <body>
     <div id="particles-js"></div>
-    <div class="container">
+    <div class="discount-container" id="homecontainers">
         <a href="https://github.com/discountdevs">
             <img src="https://avatars.githubusercontent.com/u/107265917?s=400&u=18c5c427e0def5eeb1fe588c22849146f7a46f02&v=4"
                 alt="The Discount Devs" width="250px;">
         </a>
         <h1>The Discount Devs</h1>
         <p>We make somewhat decent projects.</p>
-        <p>
-
+        <br>
+        <a href="#" onclick="seeProjects();" class="discount-button">See All Projects</a>
+        <br>
     </div>
+
+
+    <div class="discount-container-bigger" id="projectscontainer" style="display: none;">
+        <h1>Projects</h1>
+        <br>
+        Nothing here yet!
+        <br><br><br>
+        <a href="#" onclick="seeHome();" class="discount-button">&lt; Back</a>
+        <br>
+    </div>
+
+
     <script src="particles.min.js"></script>
     <script src="app.js"></script>
 </body>
