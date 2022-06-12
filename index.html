@@ -80,11 +80,13 @@
             margin: 20px;
             text-decoration: none;
             color: #FFFFFF;
+            cursor: pointer;
         }
 
         .discount-button:hover {
             background-color: rgba(0, 0, 0, 0.8);
             color: #cfc693;
+            border: 2px solid #cfc693;
         }
 
         .discount-button:active {
@@ -94,25 +96,41 @@
         /* blue play button */
         .discount-button-blue {
             border-radius: 35px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #93becf81;
             padding: 20px;
             padding-top: 20px;
             padding-bottom: 20px;
             margin: 20px;
             text-decoration: none;
             color: #FFFFFF;
+            cursor: pointer;
         }
 
         .discount-button-blue:hover {
             background-color: rgba(0, 0, 0, 0.8);
-            color: #cfc693;
+            color: #93becf;
+            /* yellow border */
+            border: 2px solid #93c8cf;
         }
 
         .discount-button-blue:active {
             background-color: rgba(0, 0, 0, 0.8);
         }
 
-        
+
+        /* project card */
+        .project-card {
+            border-radius: 35px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 20px;
+            width: 150px;
+            text-decoration: none;
+            color: #FFFFFF;
+            cursor: default;
+        }
     </style>
 
 </head>
@@ -127,7 +145,7 @@
         <h1>The Discount Devs</h1>
         <p>We make somewhat decent projects.</p>
         <br>
-        <a href="#" onclick="seeProjects();" class="discount-button">See All Projects</a>
+        <span onclick="seeProjects();" class="discount-button">See All Projects</butt>
         <br>
     </div>
 
@@ -135,9 +153,17 @@
     <div class="discount-container-bigger" id="projectscontainer" style="display: none;">
         <h1>Projects</h1>
         <br>
-        Nothing here yet!
+        <div class="project-card">
+            <a href="https://discountdevs.github.io/Clarity/">
+                <img src="https://discountdevs.github.io/Clarity/imgs/logoBig.png" alt="The Discount Devs" width="100px;">
+            </a>
+            <p>Clarity</p>
+            <p>The modern, moddable platformer!</p>
+            <br>
+            <a href="https://discountdevs.github.io/Clarity/" class="discount-button-blue" target="_blank">Play</a>
+        </div>
         <br><br><br>
-        <a href="#" onclick="seeHome();" class="discount-button">&lt; Back</a>
+        <span onclick="seeHome();" class="discount-button">&lt; Back</span>
         <br>
     </div>
 
