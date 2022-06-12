@@ -109,16 +109,19 @@ img {
 }
 
 
-/* project card */
+
 .project-card {
+    display: inline-block;
     border-radius: 35px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 20px;
-    width: 150px;
+    width: 250px;
+    height: 300px;
     text-decoration: none;
     color: #FFFFFF;
     cursor: default;
+
 }
