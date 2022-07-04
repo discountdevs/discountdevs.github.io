@@ -22,7 +22,7 @@ function seeHome(){
     bookmarkletcontainer.style.display = "block";
 }
 
-function seeBookmarklets(){
+function viewBookmarklets(){
     var homecontainer = document.getElementById("homecontainers");
     var projectscontainer = document.getElementById("projectscontainer");
     var bookmarkletcontainer = document.getElementById("bookmarkletcontainer");
