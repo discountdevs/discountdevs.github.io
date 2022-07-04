@@ -40,7 +40,7 @@
         <h1>The Discount Devs</h1>
         <p>We make somewhat decent projects.</p>
         <br>
-        <span onclick="seeProjects();" class="discount-button">See All Projects</span>
+        <span onclick="seeProjects();" class="discount-button">See All Projects</span><span onclick="viewBookmarklets();" class="discount-button">View Bookmarklets</span>
         <br>
     </div>
 
@@ -68,7 +68,20 @@
             <br>
             <a href="https://discountdevs.github.io/FourierGenerator/" class="discount-button-blue" target="_blank">Play</a>
         </div>
-        <br><br><br>
+        <br/><br/><br/>
+        <span onclick="seeHome();" class="discount-button">&lt; Back</span>
+        <br>
+    </div>
+
+    <div class="discount-container-bigger" id="bookmarkletcontainer" style="display: none;">
+        <h1>Bookmarklets</h1>
+        <div class="project-card">
+            <p>Youtube Randomizer</p>
+            <p>Jump to a random timestamp in a video</p>
+            <br>
+            <a href="javascript:(function()%7Bconst%20array%3Ddocument.getElementsByClassName(%22ytp-time-duration%22)%5B0%5D.innerHTML.split(%22%3A%22)%3Barray.length%3C3%26%26array.unshift(0)%3Bconst%20maxtime%3D3600*parseInt(array%5B0%5D%2C10)%2B60*parseInt(array%5B1%5D%2C10)%2BparseInt(array%5B2%5D%2C10)%2CqueryString%3Dwindow.location.search%2CurlParams%3Dnew%20URLSearchParams(queryString)%3Bfunction%20getRandomInt(a%2Cr)%7Breturn%20Math.floor(Math.random()*(Math.floor(r)-Math.ceil(a))%2Ba)%7Dwindow.location.href%3D%22%2Fwatch%3Fv%3D%22%2BurlParams.get(%22v%22)%2B%22%26t%3D%22%2BgetRandomInt(0%2Cmaxtime).toString()%2B%22s%22%3B%7D)()%3B" class="discount-button-blue" target="_blank">Youtube Randomizer</a>
+        </div>
+        <br/><br/><br/>
         <span onclick="seeHome();" class="discount-button">&lt; Back</span>
         <br>
     </div>

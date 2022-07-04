@@ -5,15 +5,29 @@ particlesJS.load('particles-js', 'assets/thirdparty/particlesjs-config.json', fu
 function seeProjects(){
     var homecontainer = document.getElementById("homecontainers");
     var projectscontainer = document.getElementById("projectscontainer");
+    var bookmarkletcontainer = document.getElementById("bookmarkletcontainer");
 
     homecontainer.style.display = "none";
     projectscontainer.style.display = "block";
+    bookmarkletcontainer.style.display = "none";
 }
 
 function seeHome(){
     var homecontainer = document.getElementById("homecontainers");
     var projectscontainer = document.getElementById("projectscontainer");
+    var bookmarkletcontainer = document.getElementById("bookmarkletcontainer");
 
     homecontainer.style.display = "block";
     projectscontainer.style.display = "none";
+    bookmarkletcontainer.style.display = "block";
+}
+
+function seeBookmarklets(){
+    var homecontainer = document.getElementById("homecontainers");
+    var projectscontainer = document.getElementById("projectscontainer");
+    var bookmarkletcontainer = document.getElementById("bookmarkletcontainer");
+
+    homecontainer.style.display = "none";
+    projectscontainer.style.display = "none";
+    bookmarkletcontainer.style.display = "block";
 }
