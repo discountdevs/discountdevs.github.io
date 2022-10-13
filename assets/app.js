@@ -19,7 +19,7 @@ function seeHome(){
 
     homecontainer.style.display = "block";
     projectscontainer.style.display = "none";
-    bookmarkletcontainer.style.display = "block";
+    bookmarkletcontainer.style.display = "none";
 }
 
 function viewBookmarklets(){
